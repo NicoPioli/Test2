@@ -1,0 +1,57 @@
+/* The :host selector applies styles to the component’s root element.
+   This will center the entire component vertically and horizontally on the screen. */
+/* src/app/license-plate/license-plate.component.scss */
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Additional styles for your component */
+.license-plate-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Styling for the input field */
+.input-style {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Styling for the button */
+.button-style {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #007acc;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-style:hover {
+  background-color: #005fa3;
+}
+
+/* Styling for the result text */
+.result-style {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
